@@ -9,111 +9,105 @@ import { AiFillMessage } from "react-icons/ai";
 function Connect() {
   return (
     <div>
-      <div className="mx-10 mb-10 ">
-        <div className=" flex flex-col justify-center items-center text-center ">
-          <h1 className="my-10 text-5xl font-medium drop-shadow-2xl">
+      <div className="xl:mx-20 mb-10 ">
+        <div className="max-h-screen flex flex-col justify-center items-center text-center ">
+          <h1 className="my-10 lg:text-5xl text-4xl font-medium ">
             Stay Connected
           </h1>
-          <p className="mb-10">
+          <p className="mb-10 lg:text-xl md:text-base text-sm text-slate-600">
             We'd Love Hear From You!Whether You're Looking To Book An
             Appointment Or
             <br />
             Have Questions About Our Services,Feel Free To Reach Out To Us.
           </p>
         </div>
-        <div className="w-full flex justify-start  bg-yellow-100 text-white">
-          <div className="w-5/12 bg-yellow-500 rounded-s-lg">
-            <li className="flex justify-evenly items-center gap-8 my-14 ">
-              <GrMap className="h-20 w-20" />
-              <div>
-                <h1 className="font-semibold text-lg">Address</h1>
-                <p className="text-sm font-thin">
-                  Gpo, Plot No 298,Unit-6,Biju Patnaik
-                  <br />
-                  International Airport-Aerodrome,
-                  <br />
-                  Ekamra Rd,Ganga Nagar,
-                  <br />
-                  Bhubaneswar,Odisha 751020
-                </p>
+        <div className="w-full flex xl:flex-row flex-col justify-center  bg-yellow-100 text-white">
+          <div className="xl:w-6/12 bg-yellow-500 relative ">
+            <div className="flex flex-col gap-10 md:py-40 lg:py-20 py-20">
+              <div className="flex flex-row justify-between items-center  w-full">
+                <div className="w-4/12 flex justify-center items-end">
+                  <GrMap className="text-7xl " />
+                </div>
+                <div className="flex flex-col flex-start w-8/12">
+                  <h1 className="text-3xl font-semibold">Address</h1>
+                  <p className="text-xl text-slate-100 ">
+                    {" "}
+                    Gpo, Plot No 298, Unit-6, Biju Pattanik <br />
+                    International Airport- Aerodrome,
+                    <br />
+                    Ekamra Rd,Ganga Nagar, <br /> Bhubaneswar, Odisha 751020
+                  </p>
+                </div>
               </div>
-            </li>
 
-            <li className="flex justify-evenly items-center gap-8 my-14">
-              <SlEnvolopeLetter className="h-20 w-20" />
-              <div>
-                <h1 className="font-semibold text-lg">Email</h1>
-                <p className="text-sm font-thin">
-                  {" "}
-                  Gpo, Plot No 298,Unit-6,Biju Patnaik
-                  <br />
-                  International Airport-Aerodrome,
-                  <br />
-                  Ekamra Rd,Ganga Nagar,
-                  <br />
-                  Bhubaneswar,Odisha 751020
-                </p>
+              <div className="flex flex-row justify-between items-center  w-full">
+                <div className="w-4/12 flex justify-center items-end">
+                  <SlEnvolopeLetter className="text-7xl" />
+                </div>
+                <div className="flex flex-col flex-start w-8/12">
+                  <h1 className="text-3xl font-semibold">Email</h1>
+                  <p className="text-xl text-slate-100 ">
+                    Info@Gmail.Com
+                    <br />
+                  </p>
+                </div>
               </div>
-            </li>
 
-            <li className="flex justify-evenly items-center gap-8 my-14">
-              <GiRotaryPhone className="h-20 w-20" />
-              <div>
-                <h1 className="font-semibold text-lg">Phone</h1>
-                <p className="text-sm font-thin flex flex-col justify-start">
-                  {" "}
-                  Gpo, Plot No 298,Unit-6,Biju Patnaik
-                  <br />
-                  International Airport-Aerodrome,
-                  <br />
-                  Ekamra Rd,Ganga Nagar,
-                  <br />
-                  Bhubaneswar,Odisha 751020
-                </p>
+              <div className="flex flex-row justify-between items-center  w-full mt-8">
+                <div className="w-4/12 flex justify-center items-end">
+                  <GiRotaryPhone className="text-7xl" />
+                </div>
+                <div className="flex flex-col flex-start w-8/12">
+                  <h1 className="text-3xl font-semibold">Phone</h1>
+                  <p className="text-xl text-slate-100 ">
+                    +91 824 968 6752
+                    <br />
+                  </p>
+                </div>
               </div>
-            </li>
+            </div>
           </div>
-          <div className="w-7/12">
-            <h1 className="text-black mx-7  my-8 text-2xl font-medium">
+          <div className="xl:w-6/12">
+            <h1 className="text-black mx-14  my-16 text-4xl font-semibold">
               Get In Touch
             </h1>
-            <li className="text-black mx-7 border border-black bg-yellow-50 my-8 text-2xl font-medium list-none flex justify-start items-center">
-              <FaUser className="h-5 w-5 ml-3 " />
+            <li className="text-black mx-14 border border-gray-400 bg-yellow-50 my-8 text-2xl font-medium list-none flex justify-start items-center">
+              <FaUser className="h-5 w-5 ml-3 text-gray-700" />
               <input
                 type="text"
                 placeholder="Name"
-                className="outline-none p-3"
+                className="outline-none p-4  w-full"
               />
             </li>
 
-            <li className="text-black mx-7 border border-black bg-yellow-50 my-8 text-2xl font-medium list-none flex justify-start items-center">
-              <BsEnvelopeAt className="h-5 w-5 ml-3 " />
+            <li className="text-black mx-14 border border-gray-400 bg-yellow-50 my-8 text-2xl font-medium list-none flex justify-start items-center">
+              <BsEnvelopeAt className="h-5 w-5 ml-3 text-gray-700" />
               <input
                 type="text"
                 placeholder="Email"
-                className="outline-none p-3"
+                className="outline-none p-4 w-full"
               />
             </li>
 
-            <li className="text-black mx-7 border border-black bg-yellow-50 my-8 text-2xl font-medium list-none flex justify-start items-center">
-              <FaPhoneVolume className="h-5 w-5 ml-3 " />
+            <li className="text-black mx-14 border border-gray-400 bg-yellow-50 my-8 text-2xl font-medium list-none flex justify-start items-center">
+              <FaPhoneVolume className="h-5 w-5 ml-3 text-gray-700" />
               <input
                 type="text"
                 placeholder="Phone"
-                className="outline-none p-3"
+                className="outline-none p-4  w-full"
               />
             </li>
 
-            <li className="text-black mx-7 border border-black bg-yellow-50 my-8 text-2xl font-medium list-none flex justify-start items-center">
-              <AiFillMessage className="h-5 w-5 ml-3 " />
+            <li className="text-black mx-14 border border-gray-400 bg-yellow-50 my-8 text-2xl font-medium list-none flex justify-start items-center">
+              <AiFillMessage className="h-5 w-5 ml-3 text-gray-700" />
               <input
                 type="text"
                 placeholder="Message"
-                className="outline-none p-3"
+                className="outline-none p-4  w-full"
               />
             </li>
-            <button className="text-white mx-7 border-2 border-black py-2 px-7 rounded bg-yellow-400 border-none font-semibold">
-              submit
+            <button className="text-white mx-14 border-2 border-gray-400 mb-10 py-4 px-16 rounded bg-yellow-400 border-none text-xl font-semibold ">
+              Submit
             </button>
           </div>
         </div>
