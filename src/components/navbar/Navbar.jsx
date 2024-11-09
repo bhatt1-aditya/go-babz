@@ -3,7 +3,7 @@ import logo from "../../../public/images/2.png";
 import { MdOutlineMenu } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 const Navbar = () => {
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isOpenMenu, setIsOpenMenu] = useState(true);
   const handleMenu = () => {
     setIsOpenMenu(!isOpenMenu);
   };
