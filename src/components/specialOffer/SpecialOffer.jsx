@@ -4,11 +4,11 @@ function SpecialOffer() {
   return (
     <div>
       <div>
-        <div className="w-full flex xl:flex-row flex-col gap-20 justify-start  mt-32 ">
-          <div className="xl:w-5/12 lg:w-8/12 sm:w-7/12 w-6/12 h-96 bg-yellow-500 relative">
+        <div className="w-full flex xl:flex-row flex-col gap-20 justify-start  sm:mt-32 mt-36">
+          <div className="xl:w-5/12 lg:w-8/12 w-7/12 sm:h-96 h-80  bg-yellow-500 relative">
             <img
               src={manImage}
-              className=" absolute bottom-[-44px] right-[-200px] h-[550px]"
+              className=" absolute sm:bottom-[-44px] bottom-[-30px] sm:right-[-200px] right-[-130px] sm:h-[550px] h:[400px] object-scale-down"
             />
           </div>
           <div className="xl:w-9/12 w-full  flex flex-col h-4/5 justify-center items-center   ">
@@ -23,11 +23,11 @@ function SpecialOffer() {
                 drop the moment you sign up!
               </p>
             </div>
-            <div className="border-2 border-gray-200 mt-5  w-1/2 flex justify-between  items-center rounded-s-full rounded-e-full ">
+            <div className="border-2 border-gray-200 mt-5  sm:w-1/2 w-10/12 flex justify-between  items-center rounded-s-full rounded-e-full ">
               <input
                 type="text"
                 placeholder="Phone Number"
-                className="w-full outline-none py-5 ml-10"
+                className="w-full outline-none py-5  ml-10"
               />
               <button className="border bg-green-800 text-white border-none px-5 py-3 my-1 mx-2  rounded-s-full rounded-e-full">
                 Subscribe

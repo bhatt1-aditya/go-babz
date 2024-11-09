@@ -14,7 +14,7 @@ function Connect() {
           <h1 className="my-10 lg:text-5xl text-4xl font-medium ">
             Stay Connected
           </h1>
-          <p className="mb-10 lg:text-xl md:text-base text-sm text-slate-600">
+          <p className="mb-10 lg:text-xl md:text-base sm:text-sm text-xs text-slate-600">
             We'd Love Hear From You!Whether You're Looking To Book An
             Appointment Or
             <br />
@@ -25,12 +25,12 @@ function Connect() {
           <div className="xl:w-6/12 bg-yellow-500 relative ">
             <div className="flex flex-col gap-10 md:py-40 lg:py-20 py-20">
               <div className="flex flex-row justify-between items-center  w-full">
-                <div className="w-4/12 flex justify-center items-end">
-                  <GrMap className="text-7xl " />
+                <div className="sm:w-4/12 w-3/12 flex justify-center items-end">
+                  <GrMap className="sm:text-7xl text-5xl" />
                 </div>
-                <div className="flex flex-col flex-start w-8/12">
+                <div className="flex flex-col flex-start sm:w-8/12 w-9/12">
                   <h1 className="text-3xl font-semibold">Address</h1>
-                  <p className="text-xl text-slate-100 ">
+                  <p className="sm:text-xl text-base text-slate-100 ">
                     {" "}
                     Gpo, Plot No 298, Unit-6, Biju Pattanik <br />
                     International Airport- Aerodrome,
@@ -41,12 +41,12 @@ function Connect() {
               </div>
 
               <div className="flex flex-row justify-between items-center  w-full">
-                <div className="w-4/12 flex justify-center items-end">
-                  <SlEnvolopeLetter className="text-7xl" />
+                <div className="sm:w-4/12 w-3/12 flex justify-center items-end">
+                  <SlEnvolopeLetter className="sm:text-7xl text-5xl" />
                 </div>
-                <div className="flex flex-col flex-start w-8/12">
+                <div className="flex flex-col flex-start sm:w-8/12 w-9/12">
                   <h1 className="text-3xl font-semibold">Email</h1>
-                  <p className="text-xl text-slate-100 ">
+                  <p className="sm:text-xl text-base text-slate-100 ">
                     Info@Gmail.Com
                     <br />
                   </p>
@@ -54,12 +54,12 @@ function Connect() {
               </div>
 
               <div className="flex flex-row justify-between items-center  w-full mt-8">
-                <div className="w-4/12 flex justify-center items-end">
-                  <GiRotaryPhone className="text-7xl" />
+                <div className="sm:w-4/12 w-3/12 flex justify-center items-end">
+                  <GiRotaryPhone className="sm:text-7xl text-5xl" />
                 </div>
-                <div className="flex flex-col flex-start w-8/12">
+                <div className="flex flex-col flex-start sm:w-8/12 w-9/12">
                   <h1 className="text-3xl font-semibold">Phone</h1>
-                  <p className="text-xl text-slate-100 ">
+                  <p className="sm:text-xl text-base text-slate-100 ">
                     +91 824 968 6752
                     <br />
                   </p>

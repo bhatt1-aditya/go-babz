@@ -8,21 +8,27 @@ import { FaOpera } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
 import { FaPhoneAlt } from "react-icons/fa";
+import { GrMap } from "react-icons/gr";
+import { SlEnvolopeLetter } from "react-icons/sl";
+import { GiRotaryPhone } from "react-icons/gi";
 function Footer() {
   return (
-    <div className="mx-40">
-      <div className="flex justify-between my-20">
-        <div className="flex flex-col gap-6 list-none font-semibold text-yellow-400 mt-28">
-          <h3 className="text-green-900 text-2xl">QUICK LINKS</h3>
-          <li className="text-xl">Home</li>
-          <li className="text-xl">About Us</li>
-          <li className="text-xl">Tour</li>
-          <li className="text-xl">Gallery</li>
-          <li className="text-xl">Contact Us</li>
+    <div className="sm:mx-20 mx-5">
+      <div className="flex lg:flex-row flex-col justify-between my-20">
+        <div className="flex flex-col gap-6 list-none font-semibold text-yellow-400 lg:mt-28 ">
+          <h3 className="text-green-900 xl:text-2xl text-xl">QUICK LINKS</h3>
+          <li className="xl:text-xl text-base">Home</li>
+          <li className="xl:text-xl text-base">About Us</li>
+          <li className="xl:text-xl text-base">Tour</li>
+          <li className="xl:text-xl text-base">Gallery</li>
+          <li className="xl:text-xl text-base">Contact Us</li>
         </div>
         <div className="flex flex-col justify-start items-center text-center">
-          <img src={logo} className="h-64 w-64" />
-          <p className="mb-5 text-yellow-500 text-xl">
+          <img
+            src={logo}
+            className="lg:h-64 lg:w-64 h-60 w-60 object-scale-down"
+          />
+          <p className="mb-5 text-yellow-500 xl:text-xl sm:text-base text-xs">
             At Go Cabz We're Passionate About Crafting Memorable Travel
             <br />
             Experience Tailored To Your Interests. From Adventurous Treks
@@ -50,45 +56,52 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h1 className="text-green-800 font-bold text-semibold mb-4 text-xl mt-28">
-            CONTACT US
-          </h1>
-          <ul>
-            <li className="flex gap-8 justify-center items-center pt-4 pb-2">
-              <FaLocationDot className=" text-green-800 text-4xl" />
-              <p className="text-yellow-500 text-xl">
-                Gpo, Plot No 298, Unit-6, Biju
-                <br />
-                Pattanik International Airport-
-                <br />
-                Aerodrome,Ekamra Rd,Ganga
-                <br />
-                Nagar, Bhubaneswar, Odisha
-                <br />
-                751020
-              </p>
-            </li>
+          <div className="flex flex-col gap-5">
+            <div>
+              <h1 className="text-green-800 font-bold text-semibold mb-1 xl:text-2xl text-xl lg:mt-28 mt-10">
+                CONTACT US
+              </h1>
+            </div>
+            <div className="flex flex-row lg:justify-between justify-start items-center gap-10 w-full">
+              <div className=" flex justify-center items-end ">
+                <GrMap className="text-3xl font-bold text-green-800" />
+              </div>
+              <div className="flex flex-col flex-start ">
+                <p className="text-yellow-500 xl:text-xl text-base">
+                  {" "}
+                  Gpo, Plot No 298, Unit-6, Biju <br /> Pattanik International
+                  Airport- <br />
+                  Aerodrome, Ekamra Rd,Ganga <br /> Nagar,Bhubaneswar, Odisha
+                  <br />
+                  751020
+                </p>
+              </div>
+            </div>
 
-            <li className="flex gap-8 justify-center items-center py-2">
-              <TfiEmail className=" text-green-800 text-4xl" />
-              <p className="text-yellow-500 text-xl overflow-hidden">
-                Gpo, Plot No 298, Unit-6, Biju
-                <br />
-                Pattanik International Airport-
-              </p>
-            </li>
+            <div className="flex flex-row justify-start items-center gap-10 w-full">
+              <div className=" ">
+                <SlEnvolopeLetter className=" text-3xl font-bold text-green-800" />
+              </div>
+              <div className="flex flex-col flex-start items-center gap-10 ">
+                <p className="text-yellow-500 xl:text-xl text-base ">
+                  Info@Gmail.Com
+                  <br />
+                </p>
+              </div>
+            </div>
 
-            <li className="flex gap-8 justify-center items-center py-2">
-              <FaPhoneAlt className=" text-green-800 text-4xl" />
-              <p className="text-yellow-500 text-xl overflow-hidden">
-                Gpo, Plot No 298, Unit-6, Biju
-                <br />
-                Pattanik International Airport-
-                <br />
-                751020
-              </p>
-            </li>
-          </ul>
+            <div className="flex flex-row justify-start items-center gap-10 w-full ">
+              <div className=" flex justify-center items-end">
+                <GiRotaryPhone className="text-3xl font-bold text-green-800" />
+              </div>
+              <div className="flex flex-col flex-start">
+                <p className=" text-yellow-500 xl:text-xl text-base">
+                  +91 824 968 6752
+                  <br />
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
